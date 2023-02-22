@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheesecake Recipe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <section>
+      <h1 class="heading dark playfair">Classic Cheesecake Recipe</h1>
+      <div class="main-text">
+        <img class="dots" src="./assets/6dots.svg" alt="dots" />
+        <p class="italic regular small semi-dark montserrat">Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.</p>
+      </div>
+      <img class="main-image" src="./assets/photo1.png" alt="Cheesecake"/>
+    </section>
+    <div class="recipe-container">
+      <div class="info">
+        <div class="information">
+          <ion-icon name="restaurant" class="icon eat"></ion-icon>
+          <span class="montserrat very-small bold light">
+            YIELDS
+            <span class="orange montserrat bold small">12 serving</span>
+          </span>
+        </div>
+        <div class="information">
+          <ion-icon name="time-outline" class="icon clock"></ion-icon>
+          <span class="montserrat very-small bold light">
+            PREP TIME
+            <span class="medium-dark montserrat bold small">45 minutes</span>
+          </span>
+        </div>
+        <div class="information">
+          <ion-icon name="time-outline" class="icon clock"></ion-icon>
+          <span class="montserrat very-small bold light">
+            COOK TIME
+            <span class="medium-dark montserrat bold small">1 hour</span>
+          </span>
+        </div>
+        <div class="information">
+          <ion-icon name="time-outline" class="icon clock"></ion-icon>
+          <span class="montserrat very-small bold light">
+            TOTAL TIME
+            <span class="medium-dark montserrat bold small">7,75 hours</span>
+          </span>
+        </div>
+      </div>
+      <div class="description">
+        <div class="ingredients">
+          <h2 class="playfair medium-dark large bold">Ingredients</h2>
+          <p class="playfair medium lite italic medium-dark title">Graham Cracker Crust</p>
+          <label for="graham_cracker_crumbs" class="ingredient">
+            <input type="checkbox" name="graham_cracker_crumbs" id="graham_cracker_crumbs">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              1 and 1/2 cups (150g]) <span class="bold dark">graham cracker crumbs</span> (about 10 full sheet graham crackers)
+            </span>
+          </label>
+          <label for="unsalted_butter" class="ingredient">
+            <input type="checkbox" name="unsalted_butter" id="unsalted_butter">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              5 Tablespons (70g) <span class="bold">unsalted butter</span>, melted
+            </span>
+          </label>
+          <label for="granulated_sugar" class="ingredient">
+            <input type="checkbox" name="granulated_sugar" id="granulated_sugar">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              1/4 cup (50g) <span class="bold">granulated sugar</span>
+            </span>
+          </label>
+          <p class="playfair medium lite italic medium-dark title">Cheesecake</p>
+          <label for="cream_cheese" class="ingredient">
+            <input type="checkbox" name="cream_cheese" id="cream_cheese">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              four 8-ounce blocks (904g) full-fat <span class="bold">cream cheese,</span> softened to room temperature
+            </span>
+          </label>
+          <label for="granulated_sugar2" class="ingredient">
+            <input type="checkbox" name="granulated_sugar2" id="granulated_sugar2">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              1 cup (200g) <span class="bold">granulated sugar</span>
+            </span>
+          </label>
+          <label for="sour_cream" class="ingredient">
+            <input type="checkbox" name="sour_cream" id="sour_cream">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              1 cup (240g) full-fat <span class="bold">sour cream,</span> at room temperature
+            </span>
+          </label>
+          <label for="pure_vanilla_extract" class="ingredient">
+            <input type="checkbox" name="pure_vanilla_extract" id="pure_vanilla_extract">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              1 teaspoon <span class="bold">pure vanilla extract</span>
+            </span>
+          </label>
+          <label for="fresh_lemon_juice" class="ingredient">
+            <input type="checkbox" name="fresh_lemon_juice" id="fresh_lemon_juice">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              2 teaspoons <span class="bold">fresh lemon juice</span> (optional, but recommended)
+            </span>
+          </label>
+          <label for="eggs" class="ingredient">
+            <input type="checkbox" name="eggs" id="eggs">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              3 large <span class="bold">eggs,</span> at room temperature
+            </span>
+          </label>
+          <label for="topping_suggestions" class="ingredient">
+            <input type="checkbox" name="topping_suggestions" id="topping_suggestions">
+            <span class="custom"></span>
+            <span class="montserrat regular-size lite medium-dark">
+              topping suggestions: <span class="regular italic">salted caramel, lemon curd, strawberry topping, chocolate ganache, red juice chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</span> (recipe in notes)
+            </span>
+          </label>
+        </div>
+        <div class="instructions">
+          <h2 class="playfair medium-dark large bold">Instructions</h2>
+          <div class="instruction">
+            <span class="number playfair bold large">1</span>
+            <p class="montserrat regular-size dark lite">
+              Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number playfair bold large">2</span>
+            <p class="montserrat regular-size dark lite">
+              <span class="bold">Make the crust:</span> Using a food processor, pulse the graham crackers into crumbs. Pour into a medium bowl and stir in sugar and melted butter until combined. (You can also pulse it all together in the food processor.) Mixture will be sandy. Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. No need to grease the pan first. I use the bottom of a measuring cup to pack the crust down tightly. Pre-bake for 8 minutes. Remove from the oven and place the hot pan on a large piece of aluminum foil. The foil will wrap around the pan for the water bath in step 4. Allow crust to slightly cool as you prepare the filling.
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number playfair bold large">3</span>
+            <p class="montserrat regular-size dark lite">
+              <span class="bold">Make the filling:</span> Using a handheld or stand mixer fitted with a paddle attachment, beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. On medium speed, add the eggs one at a time, beating after each addition until just blended. After the final egg is incorporated into the batter, stop mixing. To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter as best you can.
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number playfair bold large">4</span>
+            <p class="montserrat regular-size dark lite">
+              <span class="bold">Prepare the simple water bath (see note)</span> Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, so make sure you boil enough. I use an entire kettle of hot water. As the water is heating up, wrap the aluminum foil around the springform pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. Place the pan inside of a large roasting pan. Carefully pour the hot water inside of the pan and place in the oven. (Or you can place the roasting pan in the oven first, then pour the hot water in. Whichever is easier for you.)
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number playfair bold large">5</span>
+            <p class="montserrat regular-size dark lite">
+              Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of the cheesecake will slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let the cheesecake sit in the oven in the water bath as it cools down for 1 hour. Remove from the oven and water bath, then cool cheesecake completely at room temperature. Then refrigerate the cheesecake for at least 4 hours or overnight.
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number playfair bold large">6</span>
+            <p class="montserrat regular-size dark lite">
+              Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water between each slice.
+            </p>
+          </div>
+          <div class="instruction">
+            <span class="number playfair bold large">7</span>
+            <p class="montserrat regular-size dark lite">
+              Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the rim. Using a clean sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm water between each slice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="montserrat semi-light regular-size">
+    created by <a class="bold name medium-dark" href="https://github.com/alQaisi">Ahmad Alqaisi</a> - devChallenges.io
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
