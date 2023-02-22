@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+html{
+    font-size: 14px;
+    height: 100%;
+    min-height: 100vh;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width:55%;
+    max-width: 1440px;
+    margin: 50px auto 0px;
+    padding-bottom:30px;
+}
+.main-image{
+    display: block;
+    width:100%;
+    margin: 32px 0 40px;
+    border-radius: 12px;
+}
+.lite{
+    font-weight: 400;
+}
+.regular{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: 700;
+}
+.very-small{
+    font-size: .72rem;
+}
+.small{
+    font-size:1rem;
+}
+.regular-size{
+    font-size: 1.15rem;
+}
+.medium{
+    font-size:1.285rem
+}
+.large{
+    font-size: 1.71rem;
+}
+.heading{
+    font-size: 3.43rem;
+}
+.dark{
+    color: #000;
+}
+.medium-dark{
+    color: #333333;
+}
+.semi-dark{
+    color:#4F4F4F;
+}
+.semi-light{
+    color:#828282;
+}
+.light{
+    color:#BDBDBD;
+}
+.orange{
+    color: #F2994A;
+}
+.italic{
+    font-style: italic;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.playfair{
+    font-family: 'Playfair Display', serif !important;
+}
+.dots{
+    position: relative;
+    top: 2px;
+}
+.main-text{
+    display: flex;
+    align-items: flex-start;
+    gap:0px 17px;
+
+}
+.main-text p{
+    margin-block: 0;
+    max-width: 592px;
+}
+p{
+    line-height: 17px;
+}
+.ingredients{
+    margin: 0 0 32px;
+}
+.ingredients .title{
+    margin-block: 32px;
+}
+.ingredient span{
+    line-height: 25px;
+}
+.ingredient{
+    align-items: flex-start;
+    display: flex;
+    gap: 0 17px;
+    cursor: pointer;
+    margin: 12px 0;
+    max-width: 554px;
+    position: relative;
+}
+.ingredient input{
+    display: none;
+}
+.ingredient .custom{
+    position: relative;
+    min-width: 21px;
+    min-height: 21px;
+    border: 1px solid #828282;
+    border-radius: 4px;
+}
+.ingredient input:checked~.custom{
+    background-color: #F2994A;
+    border-color:#fff;
+}
+.ingredient input:checked~.custom::after{
+    content: "";
+    width: 4px;
+    height:10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    position: absolute;
+}
+.instruction p{
+    max-width: 528px;
+    line-height: 20px;
+    margin-block: 0;
+}
+.instruction{
+    display: flex;
+    gap: 0 15px;
+    align-items: flex-start;
+    margin: 32px 0;
+}
+.number{
+    display: block;
+    width: 36px;
+    height: fit-content;
+    padding: 2px 12px 8px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    background-color: #F2994A;
+}
+.icon{
+    width: 33px;
+    height: 33px;
+}
+.clock{
+    color:  #333333;
+}
+.eat{
+    color: #F2994A;
+}
+.information{
+    display: flex;
+    gap: 0 14px;
+    margin: 45px 45px;
+}
+.information span{
+    display: block;
+}
+.information span span{
+    margin-top: 4px;
+}
+.info{
+    position: sticky;
+    top: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding:10px 0;
+    max-width: 225px;
+    align-self: flex-start;
+}
+.recipe-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+footer{
+    text-align: center;
+    margin-top: 25xp;
+    padding-bottom: 15px;
+    margin-top: auto;
+}
+@media screen and (max-width:1500px) {
+    main{
+        width: 75%;
+    }
+}
+@media screen and (max-width:1075px) {
+    main{
+        width: 90%;
+    }
+}
+@media screen and (max-width:950px){
+    main{
+        width: 95%;
+    }
+}
+@media screen and (max-width:875px) {
+    .recipe-container{
+        flex-direction: column;
+    }
+    .info{
+        position: relative;
+        padding:30px 0 35px;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        max-width: unset;
+        box-shadow:unset;
+        justify-content: space-between;
+    }
+    .information{
+        margin: 15px 0px;
+    }
+    .info .information:first-of-type{
+        position:absolute;
+        top: -40px;
+        left: 0;
+    }
+    
+}
+@media screen and (max-width:550px) {
+    html{
+        font-size: 12px;
+    }
+    .icon{
+        width: 22px;
+        height:22px;
+    }
+    .information{
+        gap: 0 7px;
+    }
+    .dots{
+        position: relative;
+        top: 3px;
+    }
+    .main-text{
+        gap:0 10px;
+    }
+    .heading{
+        font-size:2.15rem;
+    }
+}
